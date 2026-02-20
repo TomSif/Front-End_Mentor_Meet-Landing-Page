@@ -8,7 +8,11 @@
 // Pas de navigation, pas de liens.
 
 function Header() {
-  return null
+  return (
+    <header className="flex justify-center pt-header">
+      <img src="/assets/logo.svg" alt="meet logo" />
+    </header>
+  );
 }
 
-export default Header
+export default Header;

@@ -4,16 +4,16 @@
    FONTS
 ---------------------------------------- */
 @font-face {
-  font-family: 'Red Hat Display';
-  src: url('/assets/fonts/red-hat-display-v21-latin-500.woff2') format('woff2');
+  font-family: "Red Hat Display";
+  src: url("/assets/fonts/red-hat-display-v21-latin-500.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Red Hat Display';
-  src: url('/assets/fonts/red-hat-display-v21-latin-900.woff2') format('woff2');
+  font-family: "Red Hat Display";
+  src: url("/assets/fonts/red-hat-display-v21-latin-900.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -25,7 +25,7 @@
    classes: bg-*, text-*, border-*, etc.
 ---------------------------------------- */
 @theme {
-  --font-family-display: 'Red Hat Display', sans-serif;
+  --font-family-display: "Red Hat Display", sans-serif;
 
   --color-cyan-600: #4d96a9;
   --color-cyan-300: #8fe3f9;
@@ -56,13 +56,17 @@
     font-weight: 900;
     line-height: 1.1;
     letter-spacing: 0px;
-    font-size: 2.5rem;     /* mobile  40px */
+    font-size: 2.5rem; /* mobile  40px */
   }
   @media (min-width: 768px) {
-    .preset-1 { font-size: 3rem; }    /* tablet 48px */
+    .preset-1 {
+      font-size: 3rem;
+    } /* tablet 48px */
   }
   @media (min-width: 1024px) {
-    .preset-1 { font-size: 4rem; }    /* desktop 64px */
+    .preset-1 {
+      font-size: 4rem;
+    } /* desktop 64px */
   }
 
   /* Preset 2 — section heading */
@@ -70,13 +74,17 @@
     font-weight: 900;
     line-height: 1.1;
     letter-spacing: 0px;
-    font-size: 2rem;       /* mobile  32px */
+    font-size: 2rem; /* mobile  32px */
   }
   @media (min-width: 768px) {
-    .preset-2 { font-size: 2.25rem; } /* tablet 36px */
+    .preset-2 {
+      font-size: 2.25rem;
+    } /* tablet 36px */
   }
   @media (min-width: 1024px) {
-    .preset-2 { font-size: 2.5rem; }  /* desktop 40px */
+    .preset-2 {
+      font-size: 2.5rem;
+    } /* desktop 40px */
   }
 
   /* Preset 3 — overline / label */
@@ -84,13 +92,17 @@
     font-weight: 900;
     line-height: 1.1;
     letter-spacing: 4px;
-    font-size: 0.75rem;    /* mobile  12px */
+    font-size: 0.75rem; /* mobile  12px */
   }
   @media (min-width: 768px) {
-    .preset-3 { font-size: 0.875rem; } /* tablet 14px */
+    .preset-3 {
+      font-size: 0.875rem;
+    } /* tablet 14px */
   }
   @media (min-width: 1024px) {
-    .preset-3 { font-size: 1rem; }     /* desktop 16px */
+    .preset-3 {
+      font-size: 1rem;
+    } /* desktop 16px */
   }
 
   /* Preset 4 — body / description */
@@ -98,10 +110,12 @@
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0px;
-    font-size: 1rem;       /* mobile/tablet 16px */
+    font-size: 1rem; /* mobile/tablet 16px */
   }
   @media (min-width: 1024px) {
-    .preset-4 { font-size: 1.125rem; } /* desktop 18px */
+    .preset-4 {
+      font-size: 1.125rem;
+    } /* desktop 18px */
   }
 
   /* Preset 5 — body long-form */
@@ -109,25 +123,39 @@
     font-weight: 900;
     line-height: 1.5;
     letter-spacing: 0px;
-    font-size: 1rem;       /* 16px all breakpoints */
+    font-size: 1rem; /* 16px all breakpoints */
   }
-}
 
-/* ----------------------------------------
+  /* ----------------------------------------
    RAW CSS VARIABLES (from Figma export)
    Use with Tailwind arbitrary values:
    e.g. mt-[var(--spacing-500)]
 ---------------------------------------- */
-:root {
-  --spacing-50:   0.25rem;
-  --spacing-100:  0.5rem;
-  --spacing-200:  1rem;
-  --spacing-300:  1.5rem;
-  --spacing-400:  2rem;
-  --spacing-500:  2.5rem;
-  --spacing-700:  3.5rem;
-  --spacing-800:  4rem;
-  --spacing-900:  4.5rem;
-  --spacing-1000: 5rem;
-  --spacing-1400: 7rem;
+  :root {
+    --spacing-50: 0.25rem;
+    --spacing-100: 0.5rem;
+    --spacing-200: 1rem;
+    --spacing-300: 1.5rem;
+    --spacing-400: 2rem;
+    --spacing-500: 2.5rem;
+    --spacing-700: 3.5rem;
+    --spacing-800: 4rem;
+    --spacing-900: 4.5rem;
+    --spacing-1000: 5rem;
+    --spacing-1400: 7rem;
+  }
+
+  /* ----------------------------------------
+   COMPONENTS PRESETS
+---------------------------------------- */
+
+  /* Spacing preset — header top padding */
+  .pt-header {
+    padding-top: 3rem; /* 48px — mobile & tablet */
+  }
+  @media (min-width: 1024px) {
+    .pt-header {
+      padding-top: var(--spacing-1000); /* 80px — desktop */
+    }
+  }
 }
