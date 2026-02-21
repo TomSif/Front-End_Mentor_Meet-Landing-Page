@@ -158,4 +158,18 @@
       padding-top: var(--spacing-1000); /* 80px — desktop */
     }
   }
+
+  /* Spacing preset — hero top padding */
+  .pt-hero {
+    padding-top: 4rem; /* 64px — mobile & tablet */
+  }
+  /* Spacing preset — hero bottom padding */
+  .pb-hero {
+    padding-bottom: 2rem; /* 32px — mobile */
+  }
+  @media (min-width: 768px) {
+    .pb-hero {
+      padding-bottom: var(--spacing-800); /* 64px — tablet & desktop */
+    }
+  }
 }
