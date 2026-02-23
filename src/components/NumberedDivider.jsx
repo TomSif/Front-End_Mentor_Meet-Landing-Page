@@ -12,11 +12,13 @@
 //   <NumberedDivider number="01" />  entre Hero et Features
 //   <NumberedDivider number="02" />  entre Features et Footer
 
-function NumberedDivider({ number }) {
+function NumberedDivider({ number, className = "" }) {
   return (
-    <div className="flex flex-col items-center  w-14 h-34 m-auto">
-      <div className=" w-px h-20 bg-slate-300 "></div>
-      <div className="rounded-full preset-5 text-slate-600 border-slate-300 border w-14 h-14 flex flex-col self-center justify-center text-center">
+    <div
+      className={`flex flex-col items-center  w-14 h-34 m-auto ${className}`}
+    >
+      <div className=" w-px h-20 bg-slate-300"></div>
+      <div className="rounded-full preset-5 text-slate-600 border-slate-300 border w-14 h-14 flex flex-col self-center justify-center text-center bg-[#ffffff]">
         {number}
       </div>
     </div>

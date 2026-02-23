@@ -13,7 +13,7 @@ function App() {
         <NumberedDivider number="01" />
         <Features />
       </div>
-      <NumberedDivider number="02" />
+      <NumberedDivider number="02" className="z-20 relative " />
       <Footer />
     </>
   );

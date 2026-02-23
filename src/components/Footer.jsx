@@ -1,22 +1,26 @@
 // Footer.jsx
-// Section finale avec appel à l'action.
-//
-// Structure :
-//   - Image de fond (ou image qui chevauche depuis le dessus)
-//        Assets par breakpoint :
-//          mobile  → /assets/mobile/image-footer.jpg
-//          tablet  → /assets/tablet/image-footer.jpg
-//          desktop → /assets/desktop/image-footer.jpg
-//   - Overlay de couleur cyan-600 par-dessus l'image (semi-transparent ou blendmode)
-//   - Contenu centré par-dessus :
-//        - Heading  "Experience more together"  → preset-2, texte white
-//        - Body text                            → preset-4, texte white
-//        - <Button variant="purple">Download v1.3</Button>
-//
-// Note : l'image footer déborde vers le haut, par-dessus le NumberedDivider "02"
+
+import Button from "./Button";
 
 function Footer() {
-  return null
+  return (
+    <div className="flex flex-col items-center text-center relative after:absolute after:inset-0 after:bg-cyan-600/80 bg-[url('/assets/mobile/image-footer.jpg')] md:bg-[url('/assets/tablet/image-footer.jpg')] lg:bg-[url('/assets/desktop/image-footer.jpg')] py-16 lg:py-28 px-8 -mt-7">
+      <div className="relative z-10  text-white flex flex-col gap-6 max-w-78 md:max-w-126 lg:flex-row lg:max-w-none items-center lg:items-start">
+        <h2 className="preset-2  lg:max-w-111 lg:text-left">
+          Experience more together
+        </h2>
+        <p className="preset-4 lg:max-w-89 lg:text-left">
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
+        <div className="lg:max-w-64 lg:w-full flex lg:justify-end">
+          <Button variant="purple" className=" max-h-41 max-w-48 ">
+            Download <span className="text-purple-300">v1.3</span>
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;
