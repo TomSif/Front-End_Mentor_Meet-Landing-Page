@@ -23,10 +23,10 @@ function Hero() {
       <picture className="flex justify-center  lg:justify-end lg:col-start-1">
         <source
           media="(min-width: 1024px)"
-          srcSet="/assets/desktop/image-hero-left.png"
+          srcSet="/assets/desktop/image-hero-left.webp"
         />
         <img
-          src="/assets/tablet/image-hero.png"
+          src="/assets/tablet/image-hero.webp"
           alt="Description"
           className=" max-w-none shrink-0 w-[107%] "
         />
@@ -51,7 +51,7 @@ function Hero() {
       <picture className=" hidden  lg:col-start-3 lg:row-start-1 lg:flex lg:justify-start ">
         <img
           className=" max-w-none shrink-0 w-[107%] "
-          src="/assets/desktop/image-hero-right.png"
+          src="/assets/desktop/image-hero-right.webp"
           alt="Description"
         />
       </picture>
