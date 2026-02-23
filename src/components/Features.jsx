@@ -43,7 +43,7 @@ function Features() {
       </div>
       <div className="flex flex-col items-center text-center">
         <div className="md:max-w-111.25">
-          <h3 className="preset-3 text-cyan-600">BUILT FOR MODERN USE</h3>
+          <p className="preset-3 text-cyan-600">BUILT FOR MODERN USE</p>
           <h2 className="preset-2 text-slate-900 pt-4 pb-8 px-1">
             Smarter meetings, all in one place
           </h2>
