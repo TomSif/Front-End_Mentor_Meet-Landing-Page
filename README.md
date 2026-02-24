@@ -1,6 +1,6 @@
 # Frontend Mentor - Meet landing page solution
 
-![Design preview for the Meet landing page coding challenge](./screenshot.jpg)
+![Design preview for the Meet landing page coding challenge](./public/assets/screenshot.png)
 
 ## Table of contents
 
@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./public/assets/screenshot.png)
 
 ### Links
 
@@ -61,8 +61,8 @@ Using the `<picture>` element with `media` queries to serve different image asse
 **CSS pseudo-elements in Tailwind (`after:`)**  
 Using `after:absolute after:inset-0 after:bg-cyan-600/80` to layer a semi-transparent color overlay on the footer background image, keeping the markup clean.
 
-**`translate-y-1/2` for overlapping components**  
-The NumberedDivider circle overlaps the sections above and below it. Using `translate-y-1/2` on the circle itself made it snap precisely to the boundary regardless of its size.
+**Negative margin for overlapping components**
+The NumberedDivider circle overlaps the sections above and below it. A negative margin on the footer equal to the exact radius of the divider circle pulls it up precisely onto the boundary.
 
 **`justify-content` vs `align-items`**  
 A good reminder that pushing items along the main axis uses `justify-`, not `self-` (which acts on the cross axis).
