@@ -8,12 +8,14 @@ function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <div className="pt-8 md:pt-13.5 pb-16 md:pb-18 px-8 lg:px-20">
-        <NumberedDivider number="01" />
-        <Features />
-      </div>
-      <NumberedDivider number="02" className="z-20 relative " />
+      <main>
+        <Hero />
+        <div className="pt-8 md:pt-13.5 pb-16 md:pb-18 px-8 lg:px-20">
+          <NumberedDivider number="01" />
+          <Features />
+        </div>
+        <NumberedDivider number="02" className="z-20 relative " />
+      </main>
       <Footer />
     </>
   );

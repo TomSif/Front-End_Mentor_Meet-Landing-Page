@@ -27,7 +27,7 @@ function Hero() {
         />
         <img
           src="/assets/tablet/image-hero.webp"
-          alt="Description"
+          alt=""
           className=" max-w-none shrink-0 w-[107%] "
         />
       </picture>
@@ -42,7 +42,7 @@ function Hero() {
           collaborate across any device.
         </p>
         <div className="flex flex-col lg:flex-row self-center gap-4">
-          <Button variant="cyan">
+          <Button variant="cyan" aria-label="Download Meet v1.3">
             Download <span className="text-cyan-300">v1.3</span>
           </Button>
           <Button variant="purple">What is it?</Button>
@@ -52,7 +52,7 @@ function Hero() {
         <img
           className=" max-w-none shrink-0 w-[107%] "
           src="/assets/desktop/image-hero-right.webp"
-          alt="Description"
+          alt=""
         />
       </picture>
     </div>
