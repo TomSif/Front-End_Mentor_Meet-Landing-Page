@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      {/* <div className="bg-[url('/assets/sceen-fm-2.png')] w-full opacity-50 border-amber-50 border-2"> */}
       <Header />
       <main>
         <Hero />
@@ -18,7 +17,6 @@ function App() {
         <NumberedDivider number="02" className="z-20 relative " />
       </main>
       <Footer />
-      {/* </div> */}
     </>
   );
 }
