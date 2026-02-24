@@ -31,7 +31,7 @@ function Hero() {
           className=" max-w-none shrink-0 w-[107%] "
         />
       </picture>
-      <div className="flex flex-col  col-span-2 row-start-2 lg:col-start-2 lg:row-start-1 lg:col-span-1 max-w-md mx-auto w-full items-center gap-6">
+      <div className="flex flex-col  col-span-2 row-start-2 lg:col-start-2 lg:row-start-1 lg:col-span-1 max-w-md mx-auto w-full items-center gap-6 mt-8">
         <h1 className="preset-1 text-center">
           Group Chat
           <br />
@@ -41,14 +41,14 @@ function Hero() {
           Meet makes it easy to connect with others face-to-face virtually and
           collaborate across any device.
         </p>
-        <div className="flex flex-col lg:flex-row self-center gap-4">
+        <div className="flex flex-col lg:flex-row self-center gap-4 mt-4">
           <Button variant="cyan" aria-label="Download Meet v1.3">
             Download <span className="text-cyan-300">v1.3</span>
           </Button>
           <Button variant="purple">What is it?</Button>
         </div>
       </div>
-      <picture className=" hidden  lg:col-start-3 lg:row-start-1 lg:flex lg:justify-start ">
+      <picture className=" hidden  lg:col-start-3 lg:row-start-1 lg:flex lg:justify-start mt-8">
         <img
           className=" max-w-none shrink-0 w-[107%] "
           src="/assets/desktop/image-hero-right.webp"
